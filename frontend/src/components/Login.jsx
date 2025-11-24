@@ -20,7 +20,7 @@ function Login() {
         // api call
         setIsloading(true)
     const response = await fetch(
-      "https://family-gullak1.onrender.com/api/auth/login",
+      "http://localhost:5000/api/auth/login",
       {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         headers: {
@@ -67,7 +67,7 @@ function Login() {
     const handleotpsend = async () => {
         setopenpasswordfield(true)
         setSendotpbuttonloading(true)
-        const response = await fetch("https://family-gullak1.onrender.com/api/auth/sendotp", {
+        const response = await fetch("http://localhost:5000/api/auth/sendotp", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -89,7 +89,7 @@ function Login() {
   const handleSendOTP = async () => {
     openotpmodal.current.click();
     setIsloadingotp(true)
-    const response = await fetch("https://family-gullak1.onrender.com/api/auth/sendotp", {
+    const response = await fetch("http://localhost:5000/api/auth/sendotp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -111,7 +111,7 @@ function Login() {
   const handleReSendOTP = async () => {
     // openotpmodal.current.click();
     setIsloadingotp(true)
-    const response = await fetch("https://family-gullak1.onrender.com/api/auth/sendotp", {
+    const response = await fetch("http://localhost:5000/api/auth/sendotp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -131,7 +131,7 @@ function Login() {
 
     const handleforgotpassword = async () => {
         setforgotsubmitbuttonloadig(true)
-        const response = await fetch("https://family-gullak1.onrender.com/api/auth/forgotpassword", {
+        const response = await fetch("http://localhost:5000/api/auth/forgotpassword", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 const NoteState = (props) => {
-  const host = "https://family-gullak1.onrender.com/";
+  const host = "http://localhost:5000/";
   const notesInitial = [];
   const [policies, setPolicy] = useState(notesInitial);
 

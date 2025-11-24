@@ -15,7 +15,7 @@ const NoteItem = (props) => {
         e.preventDefault();
     
         try {
-            const response = await fetch('https://family-gullak1.onrender.com/api/payments/create-payment-order', {
+            const response = await fetch('http://localhost:5000/api/payments/create-payment-order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

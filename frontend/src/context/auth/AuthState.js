@@ -2,7 +2,7 @@ import AuthContext from "./authcontext";
 import React, { useState } from "react";
 
 const AuthState = (props) => {
-  const host = "https://family-gullak1.onrender.com";
+  const host = "http://localhost:5000";
   const credentialsinitial = [];
   const [credentials, setCredentials] = useState(credentialsinitial);
 

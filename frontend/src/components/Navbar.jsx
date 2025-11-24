@@ -73,7 +73,7 @@ export default function Navbar() {
         e.preventDefault();
         setIsloadingpass(true)
         const response = await fetch(
-            "https://family-gullak1.onrender.com/api/auth/changepassword",
+            "http://localhost:5000/api/auth/changepassword",
             {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
                 headers: {
@@ -95,7 +95,7 @@ export default function Navbar() {
 
     const handleSendOTP = async () => {
         setSendotpbutton(true)
-        const response = await fetch("https://family-gullak1.onrender.com/api/auth/sendotp", {
+        const response = await fetch("http://localhost:5000/api/auth/sendotp", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
